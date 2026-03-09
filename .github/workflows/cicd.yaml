@@ -23,12 +23,12 @@ jobs:
         password: ${{ secrets.DOCKER_TOKEN }}
 
     
-    - name: Build and Push
-      uses: docker/build-push-action@v5
-      with:
-        context: .
-        push: true
-        tags: xahavi/fastapi-app:latest
+    # - name: Build and Push
+    #   uses: docker/build-push-action@v5
+    #   with:
+    #     context: .
+    #     push: true
+    #     tags: xahavi/fastapi-app:latest
 
     
     - name: Set up kubectl
